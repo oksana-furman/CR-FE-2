@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Mukta', sans-serif;
+    // font-family: 'Sigmar', cursive;
+    
+}
+@import "nav";
+@import "footer";
+.btnImportance{
+    border: none; 
+    border-radius: 5px; 
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    // height: 25px; 
+    // width: 25px; 
+    // margin-left: 15px
+}
