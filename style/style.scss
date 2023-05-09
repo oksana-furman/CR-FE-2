@@ -15,8 +15,10 @@ $beige2: rgba(226,225,223,255);
 @import "nav";
 @import "footer";
 body{
-    min-height: 43.6rem;
-    position: relative;
+    min-height: 100vh;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #sortDiv{
     width: 100%;
