@@ -1,0 +1,20 @@
+.navbar{
+    background-color: $green;
+    .navbar-brand{
+        color: $beige2;
+        font-family: 'Sigmar', cursive;
+    }
+    .navbar-brand:hover{
+        color: $gray;
+        transform: scale(1.2);
+        transition: width 1s, height 1s, transform 1s;
+    }
+    .nav-link{
+        color: $beige2;
+    }
+    .nav-link:hover{
+        transform: scale(1.2);
+        transition: width 1s, height 1s, transform 1s;
+        color: $gray;
+    }
+}

@@ -1,20 +1,91 @@
+$green: rgba(1,100,45,255);
+$gray: rgba(186,187,189,255);
+$beige: rgba(208,203,200,255);
+$beige2: rgba(226,225,223,255);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: 'Mukta', sans-serif;
+    font-family: 'Mukta', sans-serif;
     // font-family: 'Sigmar', cursive;
     
 }
+
 @import "nav";
 @import "footer";
-.btnImportance{
-    border: none; 
-    border-radius: 5px; 
-    height: fit-content;
-    width: fit-content;
-    padding: 0.5rem;
-    // height: 25px; 
-    // width: 25px; 
-    // margin-left: 15px
+body{
+    min-height: 43.6rem;
+    position: relative;
 }
+#sortDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+        .bi{
+            font-size: x-large;
+            cursor: pointer;
+        }
+        #btnSortUp{
+            display: none;
+        }
+}
+#box{
+    margin: auto;
+
+.item{
+    border-radius: 10px;
+    margin: 3rem;
+    height: 20rem;
+    width: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .inner{
+        border-radius: 10px;
+        height: 80%;
+        width: 80%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: relative;
+        .bi{
+            font-size: larger;
+        }
+        .bi-exclamation-triangle{
+            margin-top: 2rem;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        .btnImportance{
+            border: none; 
+            border-radius: 5px; 
+            height: fit-content;
+            width: fit-content;
+            padding: 0.2rem;
+            width: 2rem;
+            // height: 25px; 
+            // width: 25px; 
+            // margin-left: 15px
+        }
+        .details{
+            // visibility: hidden;
+            .btnDiv{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0.3rem;
+            }
+        }
+        // .details:hover{
+        //     visibility: visible;
+        // }
+    }
+}
+}
+@import "media.scss";

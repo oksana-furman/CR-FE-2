@@ -2,14 +2,107 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
 }
 
-.btnImportance {
+.navbar {
+  background-color: rgb(1, 100, 45);
+}
+.navbar .navbar-brand {
+  color: rgb(226, 225, 223);
+  font-family: "Sigmar", cursive;
+}
+.navbar .navbar-brand:hover {
+  color: rgb(186, 187, 189);
+  transform: scale(1.2);
+  transition: width 1s, height 1s, transform 1s;
+}
+.navbar .nav-link {
+  color: rgb(226, 225, 223);
+}
+.navbar .nav-link:hover {
+  transform: scale(1.2);
+  transition: width 1s, height 1s, transform 1s;
+  color: rgb(186, 187, 189);
+}
+
+footer {
+  background-color: rgb(1, 100, 45);
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+}
+footer #footer {
+  color: rgb(226, 225, 223);
+  text-align: center;
+  padding: 1rem;
+}
+
+body {
+  min-height: 43.6rem;
+  position: relative;
+}
+
+#sortDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+#sortDiv .bi {
+  font-size: x-large;
+  cursor: pointer;
+}
+#sortDiv #btnSortUp {
+  display: none;
+}
+
+#box {
+  margin: auto;
+}
+#box .item {
+  border-radius: 10px;
+  margin: 3rem;
+  height: 20rem;
+  width: 15rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#box .item .inner {
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+#box .item .inner .bi {
+  font-size: larger;
+}
+#box .item .inner .bi-exclamation-triangle {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+#box .item .inner .btnImportance {
   border: none;
   border-radius: 5px;
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  width: 2rem;
+}
+#box .item .inner .details .btnDiv {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.3rem;
 }/*# sourceMappingURL=style.css.map */
