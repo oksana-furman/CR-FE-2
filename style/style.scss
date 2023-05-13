@@ -16,7 +16,6 @@ $beige2: rgba(226,225,223,255);
 @import "footer";
 body{
     min-height: 100vh;
-    // position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -73,7 +72,7 @@ body{
             // margin-left: 15px
         }
         .details{
-            // visibility: hidden;
+            
             .btnDiv{
                 position: absolute;
                 bottom: 0;
@@ -82,12 +81,12 @@ body{
                 justify-content: space-around;
                 align-items: center;
                 margin: 0.3rem;
+                visibility: hidden;
             }
         }
-        // .details:hover{
-        //     visibility: visible;
-        // }
     }
 }
+.item:hover > .inner .details .btnDiv{
+    visibility: visible;
 }
-@import "media.scss";
+}

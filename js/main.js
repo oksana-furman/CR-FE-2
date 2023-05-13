@@ -24,7 +24,7 @@ function printTasks(){
     box.innerHTML += `
         <div class="item" style="background-image: url('${val.picture}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="inner">
-                <h5 class="card-title">${val.title}</h5>
+                <h5 class="card-title m-2">${val.title}</h5>
                 <i class="bi bi-exclamation-triangle"></i> <button class="btn btnImportance" style="background-color: ${color};">${val.importance}</button>
                 <div class="details">
                     <p class="card-text"><i class="bi bi-calendar-day"></i> ${val.deadline}</p>

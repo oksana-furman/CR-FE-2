@@ -105,4 +105,8 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0.3rem;
+  visibility: hidden;
+}
+#box .item:hover > .inner .details .btnDiv {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
